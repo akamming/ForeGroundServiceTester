@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ForeGroundServiceTester</string>
+    <string name="action_settings">Settings</string>
+    <string name="notification_title">Notificatie titel</string>
+    <string name="notification_message">Notificatie_message</string>
+    <string name="ticker_text">ticker_text</string>
+    <string name="delayedbuttonname">Delayed Start</string>
+</resources>

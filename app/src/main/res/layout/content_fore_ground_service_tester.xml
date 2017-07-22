@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.kamminga.foregroundservicetester.ForeGroundServiceTester"
+    tools:showIn="@layout/activity_fore_ground_service_tester">
+
+    <EditText
+        android:id="@+id/URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="https://www.google.nl"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="30dp"
+        tools:text="https://www.google.nl" />
+
+    <EditText
+        android:id="@+id/DelayInMilliSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="The delay in Milliseconds"
+        android:inputType="number"
+        android:text="1000"
+        app:layout_constraintTop_toBottomOf="@+id/URL"
+        tools:layout_editor_absoluteX="16dp"
+        tools:text="1000" />
+
+    <EditText
+        android:id="@+id/DelayedStartInSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="The delay in seconds"
+        android:inputType="number"
+        android:text="10"
+        app:layout_constraintTop_toBottomOf="@+id/DelayInMilliSeconds"
+        tools:layout_editor_absoluteX="16dp"
+        tools:text="10" />
+
+    <Button
+        android:id="@+id/StartForeGroundService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="Start"
+        android:text="Start"
+        app:layout_constraintTop_toBottomOf="@+id/DelayedStartInSeconds"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/DelayedStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="DelayedStart"
+        android:text="Delayed Start"
+        app:layout_constraintTop_toBottomOf="@+id/StartForeGroundService"
+        tools:layout_editor_absoluteX="16dp" />
+</android.support.constraint.ConstraintLayout>
